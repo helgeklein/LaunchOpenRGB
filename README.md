@@ -1,10 +1,9 @@
 # LaunchOpenRGB
 
-- Launches OpenRGB with a profile so it applies your keyboard lighting settings.
-- Stops OpenRGB after a safe-enough time when it's not needed any more.
+A script designed to be run as a Windows scheduled task. When started, it:
 
-Goodie: is copies your OpenRGB profile file to a backup directory
+- copies your OpenRGB profile file to a backup directory (for easier backups)
+- launches OpenRGB, applying your keyboard lighting settings profile
+- stops OpenRGB after a safe-enough time when it's not needed any more
 
-Works best when run as a scheduled task.
-
-More information: 
+More information: https://helgeklein.com/blog/controlling-rgb-keyboard-lighting-without-bloated-vendor-software/
