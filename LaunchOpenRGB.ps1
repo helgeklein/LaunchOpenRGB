@@ -23,10 +23,4 @@ Copy-Item -Path $source -Destination $backupFolder -Force
 
 # Launch the tool
 $profileFileEscaped =  '"' + $profileFile + '"'
-& $openRGBExe --startminimized --profile $profileFileEscaped
-
-# Wait
-Start-Sleep -Seconds 10
-
-# Kill OpenRGB
-Stop-Process -Name OpenRGB
+& $openRGBExe --noautoconnect --profile $profileFileEscaped --very-verbose
